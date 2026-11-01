@@ -16,6 +16,16 @@
 </nav>
 <main>
     <h1>Mini Project</h1>
+    <h2>Task 11 - jQuery Study Accordion</h2>
+    <p>Click a topic to read more. Opening a new topic closes the previous one.</p>
+    <div class="accordion">
+        <h3><button class="accordion-btn" id="topic1" aria-expanded="false" aria-controls="answer1">Selectors</button></h3>
+        <div class="accordion-panel" id="answer1" role="region" aria-labelledby="topic1"><p>Use # to select an ID, a dot to select a class, or a tag name to select elements of that type.</p></div>
+        <h3><button class="accordion-btn" id="topic2" aria-expanded="false" aria-controls="answer2">Effects</button></h3>
+        <div class="accordion-panel" id="answer2" role="region" aria-labelledby="topic2"><p>Show and hide change visibility. Fade changes opacity, while slide expands or collapses an element.</p></div>
+        <h3><button class="accordion-btn" id="topic3" aria-expanded="false" aria-controls="answer3">Animations</button></h3>
+        <div class="accordion-panel" id="answer3" role="region" aria-labelledby="topic3"><p>The animate method changes numeric CSS properties over time. Chain calls to run animations in order.</p></div>
+    </div>
 </main>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="script.js"></script>

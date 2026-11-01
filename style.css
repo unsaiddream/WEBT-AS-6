@@ -38,3 +38,9 @@ img { max-width: 100%; height: auto; }
 
 .animation-area { position: relative; max-width: 450px; height: 210px; border: 1px solid #a8bed0; background: white; }
 .box { position: absolute; width: 60px; height: 60px; background: #3498db; }
+
+.accordion { max-width: 600px; }
+.accordion h3 { margin: 12px 0 0; }
+.accordion-btn { width: 100%; margin: 0; text-align: left; font-weight: bold; }
+.accordion-btn[aria-expanded="true"] { background: #eaf4fc; }
+.accordion-panel { display: none; padding: 4px 16px; background: white; border: 1px solid #a8bed0; border-top: 0; }

@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
     console.log("jQuery is ready!");
@@ -17,45 +16,45 @@ $(document).ready(function() {
     });
 
 
-$("#hideBtn").click(function() {
-    $("#myText").hide();
-});
+    $("#hideBtn").click(function() {
+        $("#myText").hide();
+    });
 
-$("#showBtn").click(function() {
-    $("#myText").show();
-});
+    $("#showBtn").click(function() {
+        $("#myText").show();
+    });
 
-$("#toggleBtn").click(function() {
-    $("#myText").toggle();
-});
+    $("#toggleBtn").click(function() {
+        $("#myText").toggle();
+    });
 
-$("#fadeInBtn").click(function() {
-    $("#fadeImage").fadeIn(1000);
-});
+    $("#fadeInBtn").click(function() {
+        $("#fadeImage").fadeIn(1000);
+    });
 
-$("#fadeOutBtn").click(function() {
-    $("#fadeImage").fadeOut(1000);
-});
+    $("#fadeOutBtn").click(function() {
+        $("#fadeImage").fadeOut(1000);
+    });
 
-$("#fadeToggleBtn").click(function() {
-    $("#fadeImage").fadeToggle(1000);
-});
+    $("#fadeToggleBtn").click(function() {
+        $("#fadeImage").fadeToggle(1000);
+    });
 
-$("#slideUpBtn").click(function() {
-    $("#slidePanel").slideUp(500);
-});
+    $("#slideUpBtn").click(function() {
+        $("#slidePanel").slideUp(500);
+    });
 
-$("#slideDownBtn").click(function() {
-    $("#slidePanel").slideDown(500);
-});
+    $("#slideDownBtn").click(function() {
+        $("#slidePanel").slideDown(500);
+    });
 
-$("#slideToggleBtn").click(function() {
-    $("#slidePanel").slideToggle(500);
-});
+    $("#slideToggleBtn").click(function() {
+        $("#slidePanel").slideToggle(500);
+    });
 
-$("#panelHeader").click(function() {
-    $("#slidePanel").slideToggle(500);
-});
+    $("#panelHeader").click(function() {
+        $("#slidePanel").slideToggle(500);
+    });
 
 
     $("nav a").each(function() {
@@ -121,5 +120,15 @@ $("#panelHeader").click(function() {
 
     $(".reset-btn").click(function() {
         $("#" + $(this).data("box")).stop(true).css({left: 0, top: 0, width: 60, height: 60, opacity: 1});
+    });
+
+    $(".accordion-btn").click(function() {
+        let wasOpen = $(this).attr("aria-expanded") === "true";
+        $(".accordion-btn").attr("aria-expanded", "false");
+        $(".accordion-panel").stop(true, true).slideUp(300);
+        if (!wasOpen) {
+            $(this).attr("aria-expanded", "true");
+            $("#" + $(this).attr("aria-controls")).stop(true, true).slideDown(300);
+        }
     });
 });
