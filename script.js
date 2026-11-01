@@ -100,4 +100,26 @@ $("#panelHeader").click(function() {
         $("#namePreview").text($("#nameInput").val() || "Not entered");
         $("#emailPreview").text($("#emailInput").val() || "Not entered");
     });
+
+    $("#basicBtn").click(function() {
+        $("#basicBox").stop(true).css({left: 0, top: 0, width: 60, height: 60, opacity: 1})
+            .animate({left: 120, width: 110, height: 110}, 800);
+    });
+
+    $("#sequenceBtn").click(function() {
+        $("#sequenceBox").stop(true).css({left: 0, top: 0, width: 60, height: 60, opacity: 1})
+            .animate({left: 160}, 500)
+            .animate({top: 100}, 500)
+            .animate({width: 30, height: 30}, 500)
+            .animate({left: 0, top: 0, width: 60, height: 60}, 500);
+    });
+
+    $("#combinedBtn").click(function() {
+        $("#combinedBox").stop(true).css({left: 0, top: 0, width: 60, height: 60, opacity: 1})
+            .animate({left: 120, top: 70, width: 110, height: 110, opacity: 0.35}, 1000);
+    });
+
+    $(".reset-btn").click(function() {
+        $("#" + $(this).data("box")).stop(true).css({left: 0, top: 0, width: 60, height: 60, opacity: 1});
+    });
 });

@@ -35,3 +35,6 @@ button:disabled { opacity: 0.5; cursor: default; }
 input { display: block; width: 100%; max-width: 360px; padding: 9px; margin: 4px 0 14px; font: inherit; border: 1px solid #888; border-radius: 4px; }
 img { max-width: 100%; height: auto; }
 :focus-visible { outline: 3px solid #dc8b00; outline-offset: 3px; }
+
+.animation-area { position: relative; max-width: 450px; height: 210px; border: 1px solid #a8bed0; background: white; }
+.box { position: absolute; width: 60px; height: 60px; background: #3498db; }
