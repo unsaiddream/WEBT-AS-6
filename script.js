@@ -42,3 +42,19 @@ $("#fadeToggleBtn").click(function() {
     $("#fadeImage").fadeToggle(1000);
 });
 
+$("#slideUpBtn").click(function() {
+    $("#slidePanel").slideUp(500);
+});
+
+$("#slideDownBtn").click(function() {
+    $("#slidePanel").slideDown(500);
+});
+
+$("#slideToggleBtn").click(function() {
+    $("#slidePanel").slideToggle(500);
+});
+
+$("#panelHeader").click(function() {
+    $("#slidePanel").slideToggle(500);
+});
+
