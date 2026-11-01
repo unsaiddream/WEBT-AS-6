@@ -29,3 +29,16 @@ $("#showBtn").click(function() {
 $("#toggleBtn").click(function() {
     $("#myText").toggle();
 });
+
+$("#fadeInBtn").click(function() {
+    $("#fadeImage").fadeIn(1000);
+});
+
+$("#fadeOutBtn").click(function() {
+    $("#fadeImage").fadeOut(1000);
+});
+
+$("#fadeToggleBtn").click(function() {
+    $("#fadeImage").fadeToggle(1000);
+});
+
