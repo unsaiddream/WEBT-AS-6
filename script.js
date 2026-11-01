@@ -63,4 +63,41 @@ $("#panelHeader").click(function() {
             $(this).attr("aria-current", "page");
         }
     });
+
+    let itemNumber = 2;
+
+    $("#addItemBtn").click(function() {
+        itemNumber++;
+        $("#itemList").append($("<li>").text("Item " + itemNumber));
+    });
+
+    $("#prependItemBtn").click(function() {
+        itemNumber++;
+        $("#itemList").prepend($("<li>").text("Item " + itemNumber));
+    });
+
+    $("#removeItemBtn").click(function() {
+        $("#itemList li").last().remove();
+    });
+
+    $("#changeImageBtn").click(function() {
+        if ($("#changeImage").attr("src") === "images/mountains.svg") {
+            $("#changeImage").attr({src: "images/sea.svg", alt: "Sea"});
+        } else {
+            $("#changeImage").attr({src: "images/mountains.svg", alt: "Mountains"});
+        }
+    });
+
+    $("#changeLinkBtn").click(function() {
+        $("#resourceLink").attr("href", "https://api.jquery.com/").text("jQuery API documentation");
+    });
+
+    $("#liveForm").on("submit", function(event) {
+        event.preventDefault();
+    });
+
+    $("#nameInput, #emailInput").on("input", function() {
+        $("#namePreview").text($("#nameInput").val() || "Not entered");
+        $("#emailPreview").text($("#emailInput").val() || "Not entered");
+    });
 });

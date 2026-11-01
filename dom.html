@@ -16,6 +16,33 @@
 </nav>
 <main>
     <h1>DOM Manipulation</h1>
+    <section>
+        <h2>Task 5 - Add &amp; Remove Elements</h2>
+        <ul id="itemList"><li>Item 1</li><li>Item 2</li></ul>
+        <button id="addItemBtn">Add Item</button>
+        <button id="prependItemBtn">Add to Start</button>
+        <button id="removeItemBtn">Remove Item</button>
+    </section>
+    <section>
+        <h2>Task 6 - Modifying Attributes</h2>
+        <img id="changeImage" src="images/mountains.svg" alt="Mountains" width="300" height="200">
+        <div><button id="changeImageBtn">Change Image</button></div>
+        <p><a id="resourceLink" href="https://jquery.com/">jQuery website</a></p>
+        <button id="changeLinkBtn">Change Link</button>
+    </section>
+    <section>
+        <h2>Task 7 - Form Interaction</h2>
+        <form id="liveForm">
+            <label for="nameInput">Name</label>
+            <input id="nameInput" name="name" autocomplete="name">
+            <label for="emailInput">Email</label>
+            <input id="emailInput" name="email" type="email" autocomplete="email">
+        </form>
+        <div aria-live="polite">
+            <p>Name: <span id="namePreview">Not entered</span></p>
+            <p>Email: <span id="emailPreview">Not entered</span></p>
+        </div>
+    </section>
 </main>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="script.js"></script>
