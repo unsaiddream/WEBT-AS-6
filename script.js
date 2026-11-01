@@ -16,7 +16,6 @@ $(document).ready(function() {
         $("h3").css("font-size", "30px");
     });
 
-});
 
 $("#hideBtn").click(function() {
     $("#myText").hide();
@@ -58,3 +57,10 @@ $("#panelHeader").click(function() {
     $("#slidePanel").slideToggle(500);
 });
 
+
+    $("nav a").each(function() {
+        if ($(this).attr("href") === (location.pathname.split("/").pop() || "index.html")) {
+            $(this).attr("aria-current", "page");
+        }
+    });
+});

@@ -21,3 +21,17 @@
 #slidePanel p {
     color: #222;
 }
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #f5f7fa; line-height: 1.5; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px max(20px, calc((100% - 900px) / 2)); background: #245b83; }
+nav a { color: white; text-decoration: none; }
+nav a:hover, nav a[aria-current="page"] { text-decoration: underline; }
+main { max-width: 940px; margin: auto; padding: 20px; }
+h2 { margin-top: 32px; }
+button { padding: 9px 14px; margin: 4px 4px 4px 0; cursor: pointer; border: 1px solid #245b83; border-radius: 4px; background: white; color: #245b83; font: inherit; }
+button:hover { background: #eaf4fc; }
+button:disabled { opacity: 0.5; cursor: default; }
+input { display: block; width: 100%; max-width: 360px; padding: 9px; margin: 4px 0 14px; font: inherit; border: 1px solid #888; border-radius: 4px; }
+img { max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid #dc8b00; outline-offset: 3px; }
