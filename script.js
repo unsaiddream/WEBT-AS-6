@@ -17,3 +17,15 @@ $(document).ready(function() {
     });
 
 });
+
+$("#hideBtn").click(function() {
+    $("#myText").hide();
+});
+
+$("#showBtn").click(function() {
+    $("#myText").show();
+});
+
+$("#toggleBtn").click(function() {
+    $("#myText").toggle();
+});
